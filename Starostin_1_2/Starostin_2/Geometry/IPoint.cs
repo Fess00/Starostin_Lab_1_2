@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Starostin_1
+namespace Starostin_2
 {
-    internal interface IDrawable
+    internal interface IPoint
     {
-        void Draw(ICurve curve);
+        double X { get; set; }
+        double Y { get; set; }
     }
 }

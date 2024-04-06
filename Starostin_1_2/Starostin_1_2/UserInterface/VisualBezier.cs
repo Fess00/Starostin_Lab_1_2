@@ -1,11 +1,10 @@
-﻿using Starostin_1.Visual;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Starostin_1.UserInterface
+namespace Starostin_1
 {
     internal class VisualBezier : VisualCurve
     {

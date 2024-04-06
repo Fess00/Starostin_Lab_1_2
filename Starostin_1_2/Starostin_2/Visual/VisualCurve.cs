@@ -4,15 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Starostin_1
+namespace Starostin_2
 {
     abstract class VisualCurve : ICurve, IDrawable
     {
-        public abstract void Draw(ICurve curve);
+        protected ICurve curve;
+
+        public VisualCurve(ICurve curve)
+        {
+            this.curve = curve;
+        }
+
+        public abstract void Draw(int n);
 
         public virtual void GetPoint(double t, out IPoint p)
         {
-            p = new Point();
+            curve.GetPoint(t, out p);
         }
     }
 }

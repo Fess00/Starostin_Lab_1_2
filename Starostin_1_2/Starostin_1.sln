@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starostin_1", "Starostin_1_2\Starostin_1.csproj", "{70DB0E7F-1924-4601-B261-6F5A22D20F9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Starostin_1", "Starostin_1_2\Starostin_1.csproj", "{70DB0E7F-1924-4601-B261-6F5A22D20F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starostin_2", "Starostin_2\Starostin_2.csproj", "{D477318D-1AA9-4A0D-B687-DA7B2FC82C3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,12 @@ Global
 		{70DB0E7F-1924-4601-B261-6F5A22D20F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70DB0E7F-1924-4601-B261-6F5A22D20F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70DB0E7F-1924-4601-B261-6F5A22D20F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D477318D-1AA9-4A0D-B687-DA7B2FC82C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D477318D-1AA9-4A0D-B687-DA7B2FC82C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D477318D-1AA9-4A0D-B687-DA7B2FC82C3A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D477318D-1AA9-4A0D-B687-DA7B2FC82C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D477318D-1AA9-4A0D-B687-DA7B2FC82C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D477318D-1AA9-4A0D-B687-DA7B2FC82C3A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
