@@ -29,14 +29,14 @@ namespace Starostin_2
             
             for (int i = 0; i <= n - 1; i++)
             {
-
                 points[i] = new Point();
-                curve.GetPoint(Convert.ToDouble(i / (n - 1)), out points[i]);
+                curve.GetPoint((Convert.ToDouble(i) / Convert.ToDouble(n - 1)), out points[i]);
                 p[i] = new System.Drawing.PointF((float)points[i].X, (float)points[i].Y);
             }
             path.AddCurve(p);
             g.DrawPath(pen, path);
-            bitmap.Save(@"D:\CODE\C#\Starostin_Lab_1_2\Starostin_1_2\Starostin_2\Resources\Images\firstschemeimage.png", System.Drawing.Imaging.ImageFormat.Png);
+            bitmap.Save(@"C:\Users\MagicWheel\Documents\Code_Base\C#\Starostin_Lab_1_2\Starostin_1_2\Starostin_2\Resources\Images\firstschemeimage.png", 
+                System.Drawing.Imaging.ImageFormat.Png);
         }
     }
 }

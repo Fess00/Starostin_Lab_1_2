@@ -24,20 +24,20 @@ namespace Starostin_2
             Graphics g = Graphics.FromImage(bitmap);
             GraphicsPath path = new GraphicsPath();
             g.Clear(System.Drawing.Color.White);
-            Pen pen = new Pen(System.Drawing.Color.Green, 5);
-            pen.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor;
-            pen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
+            Pen pen = new Pen(System.Drawing.Color.Black, 5);
+            pen.EndCap = System.Drawing.Drawing2D.LineCap.Square;
+            pen.StartCap = System.Drawing.Drawing2D.LineCap.Square;
 
             for (int i = 0; i <= n - 1; i++)
             {
-
                 points[i] = new Point();
-                curve.GetPoint(Convert.ToDouble(i / (n - 1)), out points[i]);
+                curve.GetPoint((Convert.ToDouble(i) / Convert.ToDouble(n - 1)), out points[i]);
                 p[i] = new System.Drawing.PointF((float)points[i].X, (float)points[i].Y);
             }
             path.AddCurve(p);
             g.DrawPath(pen, path);
-            bitmap.Save(@"D:\CODE\C#\Starostin_Lab_1_2\Starostin_1_2\Starostin_2\Resources\Images\secondschemeimage.png", System.Drawing.Imaging.ImageFormat.Png);
+            bitmap.Save(@"C:\Users\MagicWheel\Documents\Code_Base\C#\Starostin_Lab_1_2\Starostin_1_2\Starostin_2\Resources\Images\secondschemeimage.png",
+                System.Drawing.Imaging.ImageFormat.Png);
         }
     }
 }

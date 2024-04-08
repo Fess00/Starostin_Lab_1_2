@@ -3,8 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Starostin_2.FirstScheme">
     <VerticalStackLayout>
-        <ScrollView x:Name="FirstSchemeScrollView">
-            <Button x:Name="GenerateFirstScheme" Text="Генерация" Clicked="OnButtonClicked"></Button>
-        </ScrollView>
+        <StackLayout x:Name="FirstSchemeScrollView">
+            <Picker x:Name="linePicker" Title="Выбор линии:">
+                <Picker.Items>
+                    <x:String>Прямая</x:String>
+                    <x:String>Кривая</x:String>
+                </Picker.Items>
+            </Picker>
+            <Image x:Name="img" MinimumHeightRequest="512">
+                
+            </Image>
+            <Button x:Name="GenerateFir1stScheme" Text="Генерация" Clicked="OnButtonClicked"></Button>
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>

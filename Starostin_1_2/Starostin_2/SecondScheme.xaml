@@ -2,7 +2,16 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Starostin_2.SecondScheme">
-    <VerticalStackLayout>
+    <StackLayout>
+        <Picker x:Name="linePicker" Title="Выбор линии:">
+            <Picker.Items>
+                <x:String>Прямая</x:String>
+                <x:String>Кривая</x:String>
+            </Picker.Items>
+        </Picker>
+        <Image x:Name="img">
+            
+        </Image>
         <Button x:Name="GenerateSecondScheme" Text="Генерация" Clicked="OnButtonClicked"></Button>
-    </VerticalStackLayout>
+    </StackLayout>
 </ContentPage>
