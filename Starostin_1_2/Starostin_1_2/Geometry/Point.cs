@@ -17,7 +17,7 @@ namespace Starostin_1
             Y = 0;
         }
 
-        public Point(double x, double y) : this()
+        public Point(double x, double y)
         {
             X = x;
             Y = y;

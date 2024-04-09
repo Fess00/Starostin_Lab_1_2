@@ -8,7 +8,7 @@ namespace Starostin_2
 {
     abstract class VisualCurve : ICurve, IDrawable
     {
-        protected ICurve curve;
+        protected ICurve curve; // нужен для моста
 
         public VisualCurve(ICurve curve)
         {
@@ -19,7 +19,9 @@ namespace Starostin_2
 
         public virtual void GetPoint(double t, out IPoint p)
         {
-            curve.GetPoint(t, out p);
+            curve.GetPoint(t, out p); //берется из Line или Bezier
         }
+
+        public abstract void SaveSVG();
     }
 }

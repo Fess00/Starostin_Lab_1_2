@@ -9,5 +9,6 @@ namespace Starostin_2
     internal interface IDrawable
     {
         void Draw(int n);
+        void SaveSVG();
     }
 }

@@ -9,9 +9,10 @@
                 <x:String>Кривая</x:String>
             </Picker.Items>
         </Picker>
-        <Image x:Name="img">
+        <Image x:Name="img" HeightRequest="512" WidthRequest="512">
             
         </Image>
-        <Button x:Name="GenerateSecondScheme" Text="Генерация" Clicked="OnButtonClicked"></Button>
+        <Button x:Name="GenerateSecondScheme" Text="Генерация кривых" Clicked="OnButtonClicked"></Button>
+        <Button x:Name="GenerateSVGSecondScheme" Text="Сохранить в SVG-файле" Clicked="OnButtonSVGClicked" IsEnabled="False"></Button>
     </StackLayout>
 </ContentPage>

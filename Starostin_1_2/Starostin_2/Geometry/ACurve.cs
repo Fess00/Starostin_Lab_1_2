@@ -8,6 +8,8 @@ namespace Starostin_2
 {
     abstract class ACurve : ICurve
     {
+        protected VisualCurve curve;
+
         protected IPoint a, b;
 
         protected ACurve(IPoint a, IPoint b)

@@ -2,7 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Starostin_2.FirstScheme">
-    <VerticalStackLayout>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Image x:Key="image" Source="firstschemeimage.png"></Image>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <VerticalStackLayout x:Name="layout">
         <StackLayout x:Name="FirstSchemeScrollView">
             <Picker x:Name="linePicker" Title="Выбор линии:">
                 <Picker.Items>
@@ -10,10 +15,11 @@
                     <x:String>Кривая</x:String>
                 </Picker.Items>
             </Picker>
-            <Image x:Name="img" MinimumHeightRequest="512">
+            <Image x:Name="img" HeightRequest="512" WidthRequest="512">
                 
             </Image>
-            <Button x:Name="GenerateFir1stScheme" Text="Генерация" Clicked="OnButtonClicked"></Button>
+            <Button x:Name="GenerateFir1stScheme" Text="Генерация кривых" Clicked="OnButtonClicked"></Button>
+            <Button x:Name="GenerateSVGFir1stScheme" Text="Сохранить в SVG-файле" Clicked="OnButtonSVGClicked" IsEnabled="False"></Button>
         </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
