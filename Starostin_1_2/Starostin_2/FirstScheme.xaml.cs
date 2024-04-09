@@ -40,8 +40,12 @@ public partial class FirstScheme : ContentPage
 
     public static async Task<byte[]> ImageSourceToByteArrayAsync(ImageSource imageSource)
     {
+        var path = AppDomain.CurrentDomain.BaseDirectory;
+        string dir = Path.GetDirectoryName(path);
+        var parent = Directory.GetParent(dir);
+        var p = parent.Parent.Parent.Parent.Parent;
         using var stream = File.OpenRead(
-            @"D:\CODE\C#\Starostin_Lab_1_2\Starostin_1_2\Starostin_2\Resources\Images\firstschemeimage.png");
+            p.ToString() + @"\Resources\Images\firstschemeimage.png");
         byte[] bytesAvailable = new byte[stream.Length];
         stream.Read(bytesAvailable, 0, bytesAvailable.Length);
         return bytesAvailable;
