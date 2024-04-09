@@ -41,7 +41,7 @@ namespace Starostin_2
             string dir = Path.GetDirectoryName(path);
             var parent = Directory.GetParent(dir);
             var pa = parent.Parent.Parent.Parent.Parent;
-            bitmap.Save(pa.ToString() + @"\Resources\Images\secondschemeimage.png",
+            bitmap.Save(HomePath.HP + "secondschemeimage.png",
                 System.Drawing.Imaging.ImageFormat.Png);
         }
 
@@ -51,7 +51,7 @@ namespace Starostin_2
                 $"<rect x=\"{(int)points[0].X}\" y=\"{(int)points[0].Y}\" width=\"2\" height=\"2\" stroke=\"black\" fill=\"black\" stroke-width=\"5\"/>" +
                 $"<path d=\"M {(int)points[0].X} {(int)points[0].Y} C {(int)points[1].X} {(int)points[1].Y}, {(int)points[2].X} {(int)points[2].Y}, {(int)points[3].X} {(int)points[3].Y}\" stroke=\"black\" fill=\"transparent\"/>" +
                 $"<rect x=\"{(int)points[3].X}\" y=\"{(int)points[3].Y}\" width=\"2\" height=\"2\" stroke=\"black\" fill=\"black\" stroke-width=\"5\"/></svg>";
-            File.WriteAllText(@"D:\CODE\C#\Starostin_Lab_1_2\Starostin_1_2\Starostin_2\Resources\Images\schemetwosvg.svg", documentContent);
+            File.WriteAllText(HomePath.HP + "schemetwosvg.svg", documentContent);
         }
     }
 }

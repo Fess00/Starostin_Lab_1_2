@@ -38,7 +38,7 @@ namespace Starostin_2
             string dir = Path.GetDirectoryName(path);
             var parent = Directory.GetParent(dir);
             var pa = parent.Parent.Parent.Parent.Parent;
-            bitmap.Save(pa.ToString() + @"\Resources\Images\firstschemeimage.png", 
+            bitmap.Save(HomePath.HP + "firstschemeimage.png", 
                 System.Drawing.Imaging.ImageFormat.Png);
         }
 
@@ -48,7 +48,7 @@ namespace Starostin_2
                 $"<defs>\r\n<marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"0\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n<path d=\"M0,0 L0,6 L9,3 z\" fill=\"green\" />\r\n</marker>\r\n</defs>" +
                 $"<circle cx=\"{(int)points[0].X}\" cy=\"{(int)points[0].Y}\" r=\"2\" fill=\"green\"/>" +
                 $"<path d=\"M {(int)points[0].X} {(int)points[0].Y} C {(int)points[1].X} {(int)points[1].Y}, {(int)points[2].X} {(int)points[2].Y}, {(int)points[3].X} {(int)points[3].Y}\" stroke=\"green\" fill=\"transparent\" marker-end=\"url(#arrow)\" /></svg>";
-            File.WriteAllText(@"D:\CODE\C#\Starostin_Lab_1_2\Starostin_1_2\Starostin_2\Resources\Images\schemeonesvg.svg", documentContent);
+            File.WriteAllText(HomePath.HP + "schemeonesvg.svg", documentContent);
         }
     }
 }
