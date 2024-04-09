@@ -5,13 +5,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Starostin_2"
     Shell.FlyoutBehavior="Disabled">
-
+    
     <TabBar>
         <Tab Title="Схема визуализации 1">
             <ShellContent
                 x:Name="FirstScheme"
                 ContentTemplate="{DataTemplate local:FirstScheme}"
-                Route="FirstScheme" />     
+                Route="FirstScheme" />
         </Tab>
         <Tab Title="Схема визуализации 2">
             <ShellContent
@@ -20,5 +20,4 @@
                 Route="SecondScheme" />
         </Tab>
     </TabBar>
-
 </Shell>
